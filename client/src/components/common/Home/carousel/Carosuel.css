@@ -1,0 +1,36 @@
+/* Add this CSS to your stylesheet */
+.wave-container {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 1;
+  }
+  
+  .wave-container svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px); /* Fix for a slight rendering issue in some browsers */
+    height: auto;
+  }
+  
+  .container-fluid {
+    position: relative;
+  }
+  
+  .position-relative {
+    position: relative;
+  }
+  
+  /* Adjust the styles of your existing classes as needed */
+  
+  /* Example styles for the top and bottom waves */
+  .wave-container.top {
+    top: 0;
+  }
+  
+  .wave-container.bottom {
+    bottom: 0;
+    transform: rotate(180deg); /* Flip the bottom wave */
+  }
+  
